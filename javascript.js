@@ -1,21 +1,22 @@
-var temp = document.querySelector('.timer');
- 	var button = document.querySelector("button");
- 	var words = document.querySelector(".words");
- 	var timerDiv = document.querySelector(".timer");
- 	var scoreDiv = document.querySelector(".score");
- 	var points = 0;
- 	var spans;
- 	var typed;
- 	var seconds = 20;
-  var ding = new Audio("Ding.mp3");
-  var soundtrack = new Audio("Soundtrack.mp3")
+  
+ var time = document.querySelector('.timer');
+ var button = document.querySelector("button");
+ var words = document.querySelector(".words");
+ var timerDiv = document.querySelector(".timer");
+ var scoreDiv = document.querySelector(".score");
+ var points = 0;
+ var spans;
+ var typed;
+ var seconds = 20;
+ var ding = new Audio("Ding.mp3");
+ var soundtrack = new Audio("Soundtrack.mp3")
 
  	function countdown() {
  		points = 0;
  		var timer = setInterval(function(){
  			button.disabled = true;
     		seconds--;
-    		temp.innerHTML = seconds;
+    		time.innerHTML = seconds;
     		if (seconds === 0) {
           soundtrack.pause();
     			alert("Game over! Your score is " + points);
@@ -79,17 +80,15 @@ var temp = document.querySelector('.timer');
   					checker++;
   				}
   				if (checker === spans.length) { 
-            ding.pause();
-					  ding.currentTime = 0;
-            ding.play();
-  					words.classList.add("animated");
-  					words.classList.add("fadeOut");
-  					points++; // increment the points
-  					scoreDiv.innerHTML = points; //add points to the points div
+            				ding.pause();
+					ding.currentTime = 0;
+          				ding.play();
+  					points++; 
+  					scoreDiv.innerHTML = points;
   					document.removeEventListener("keydown", typing, false);
   					setTimeout(function(){
-  						words.className = "words"; // restart the classes
-  						random(); // give another word
+  						words.className = "words"; 
+  						random(); 
   						document.addEventListener("keydown", typing, false);
   					}, 400);
   				}
