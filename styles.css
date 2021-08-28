@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(15, 58, 11);
+}
+
+.container{
+    text-align: center;
+    background-color: #6c7405;
+    padding: 3rem;
+    margin: 0 20%;
+    position: inherit;
+    border-radius: 30px;
+    border: solid rgb(1, 26, 0);
+    border-width: 5px;
+}
+
+h1{
+    margin: 0;
+    color: #fff;
+    font-family: 'Rampart One', cursive;
+    font-size: 4rem;
+    
+}
+
+#insruction{
+    margin: 3rem;
+    color: azure;
+    
+}
+
+.timer-container{
+    float: right;
+    font-size: 2rem;
+    color: rgb(232, 236, 0);
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.in{
+    color: red;
+}
+
+.score-container{
+    float: left;
+    font-size: 2rem;
+    color: rgb(1, 12, 173);
+    font-family: 'Indie Flower', cursive;
+}
+
+.btn {
+    border: none;
+    background-color: #d6d304;
+    outline: none;
+    border-radius: 7px;
+    padding: 20px 35px;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+ }
+
+ .btn:hover {
+    border: none;
+    background-color: #a09e14;
+    outline: none;
+    border-radius: 7px;
+    padding: 18px 33px;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+ }
+ 
+ .btn:active {
+   transform: translate(0px, 5px);
+   -webkit-transform: translate(0px, 5px);
+   box-shadow: 0px 1px 0px 0px;
+ }
+
+
+.hightlight{
+    background-color: rgb(0, 255, 115);
+}
+
+.words-container{
+    
+    float: bottom;
+}
+
+.words{
+    color: white;
+    font-size: 3.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
